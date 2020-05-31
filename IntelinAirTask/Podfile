@@ -1,0 +1,56 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'IntelinAirTask' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IntelinAirTask
+ pod 'Mapbox-iOS-SDK', '~> 5.9'
+
+end
+
+target 'IntelinAirTaskTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+target 'IntelinAirTaskBinding' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IntelinAirTaskBinding
+
+end
+
+target 'IntelinAirTaskExtensions' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IntelinAirTaskExtensions
+
+end
+
+target 'IntelinAirTaskModel' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IntelinAirTaskModel
+
+end
+
+target 'IntelinAirTaskNetworking' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IntelinAirTaskNetworking
+
+end
+
+target 'IntelinAirTaskViewModel' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IntelinAirTaskViewModel
+
+end

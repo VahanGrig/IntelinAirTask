@@ -1,0 +1,1403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9164A0E24837B0F0064C0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A0D24837B0F0064C0ED /* AppDelegate.swift */; };
+		D9164A1024837B0F0064C0ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A0F24837B0F0064C0ED /* SceneDelegate.swift */; };
+		D9164A1524837B0F0064C0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9164A1324837B0F0064C0ED /* Main.storyboard */; };
+		D9164A1724837B100064C0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9164A1624837B100064C0ED /* Assets.xcassets */; };
+		D9164A1A24837B100064C0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9164A1824837B100064C0ED /* LaunchScreen.storyboard */; };
+		D9164A2624837BA00064C0ED /* TilesetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2324837BA00064C0ED /* TilesetCell.swift */; };
+		D9164A2724837BA00064C0ED /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2424837BA00064C0ED /* MapViewController.swift */; };
+		D9164A2824837BA00064C0ED /* TilesetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2524837BA00064C0ED /* TilesetsViewController.swift */; };
+		D9164A2C24837BC50064C0ED /* TilestesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2A24837BC40064C0ED /* TilestesViewModel.swift */; };
+		D9164A2D24837BC50064C0ED /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2B24837BC50064C0ED /* MapViewModel.swift */; };
+		D9164A3324837BF10064C0ED /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2F24837BF10064C0ED /* Geometry.swift */; };
+		D9164A3424837BF10064C0ED /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3024837BF10064C0ED /* FlightInfo.swift */; };
+		D9164A3524837BF10064C0ED /* Tileset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3124837BF10064C0ED /* Tileset.swift */; };
+		D9164A3624837BF10064C0ED /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3224837BF10064C0ED /* Flights.swift */; };
+		D9164A3A24837C540064C0ED /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3924837C540064C0ED /* Container.swift */; };
+		D9164A3C24837CAB0064C0ED /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3B24837CAB0064C0ED /* APIClient.swift */; };
+		D9164A3F24837D210064C0ED /* IntelinAirTask+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3E24837D210064C0ED /* IntelinAirTask+UIImageView.swift */; };
+		D9164A4124837DC00064C0ED /* InteliAirTask+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A4024837DC00064C0ED /* InteliAirTask+URLSession.swift */; };
+		D9164A4324837DF10064C0ED /* IntelinAirTask+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A4224837DF10064C0ED /* IntelinAirTask+Data.swift */; };
+		D9164A4524837E3D0064C0ED /* IntelinAirTaskStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A4424837E3D0064C0ED /* IntelinAirTaskStrings.swift */; };
+		D9164A5024837EE30064C0ED /* IntelinAirTaskExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D9164A4E24837EE30064C0ED /* IntelinAirTaskExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9164A5324837EE30064C0ED /* IntelinAirTaskExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9164A4C24837EE30064C0ED /* IntelinAirTaskExtensions.framework */; };
+		D9164A5424837EE30064C0ED /* IntelinAirTaskExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9164A4C24837EE30064C0ED /* IntelinAirTaskExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9164A5924837F1F0064C0ED /* IntelinAirTask+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3E24837D210064C0ED /* IntelinAirTask+UIImageView.swift */; };
+		D9164A5A24837F210064C0ED /* InteliAirTask+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A4024837DC00064C0ED /* InteliAirTask+URLSession.swift */; };
+		D9164A5B24837F240064C0ED /* IntelinAirTask+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A4224837DF10064C0ED /* IntelinAirTask+Data.swift */; };
+		D9164A6524837F5C0064C0ED /* IntelinAirTaskViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9164A6324837F5C0064C0ED /* IntelinAirTaskViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9164A6824837F5C0064C0ED /* IntelinAirTaskViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9164A6124837F5C0064C0ED /* IntelinAirTaskViewModel.framework */; };
+		D9164A6924837F5C0064C0ED /* IntelinAirTaskViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9164A6124837F5C0064C0ED /* IntelinAirTaskViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9164A6D24837F670064C0ED /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2B24837BC50064C0ED /* MapViewModel.swift */; };
+		D9164A6E24837F690064C0ED /* TilestesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2A24837BC40064C0ED /* TilestesViewModel.swift */; };
+		D9164A7824837FC50064C0ED /* IntelinAirTaskModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9164A7624837FC50064C0ED /* IntelinAirTaskModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9164A7B24837FC50064C0ED /* IntelinAirTaskModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9164A7424837FC50064C0ED /* IntelinAirTaskModel.framework */; };
+		D9164A7C24837FC50064C0ED /* IntelinAirTaskModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9164A7424837FC50064C0ED /* IntelinAirTaskModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9164A8024837FE60064C0ED /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3024837BF10064C0ED /* FlightInfo.swift */; };
+		D9164A8124837FE80064C0ED /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3224837BF10064C0ED /* Flights.swift */; };
+		D9164A8224837FEA0064C0ED /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2F24837BF10064C0ED /* Geometry.swift */; };
+		D9164A8324837FED0064C0ED /* Tileset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3124837BF10064C0ED /* Tileset.swift */; };
+		D925194524838EA2008BF4F0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3B24837CAB0064C0ED /* APIClient.swift */; };
+		D9876F5D2483867700EE3367 /* IntelinAirTaskBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = D9876F5B2483867700EE3367 /* IntelinAirTaskBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9876F602483867700EE3367 /* IntelinAirTaskBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9876F592483867700EE3367 /* IntelinAirTaskBinding.framework */; };
+		D9876F612483867700EE3367 /* IntelinAirTaskBinding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9876F592483867700EE3367 /* IntelinAirTaskBinding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9876F652483868C00EE3367 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3924837C540064C0ED /* Container.swift */; };
+		D9DED0E02484276B00EF0775 /* InteliAirTask+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A4024837DC00064C0ED /* InteliAirTask+URLSession.swift */; };
+		D9DED0E124842A5200EF0775 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3B24837CAB0064C0ED /* APIClient.swift */; };
+		D9E2F33B2483A38700747520 /* TilesetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F33A2483A38700747520 /* TilesetViewModel.swift */; };
+		D9E2F33C2483A38700747520 /* TilesetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F33A2483A38700747520 /* TilesetViewModel.swift */; };
+		D9E2F33E2483A66C00747520 /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F33D2483A66C00747520 /* CellConfigurable.swift */; };
+		D9E2F33F2483A66C00747520 /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F33D2483A66C00747520 /* CellConfigurable.swift */; };
+		D9E2F3472483AF1100747520 /* IntelinAirTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F3462483AF1100747520 /* IntelinAirTaskTests.swift */; };
+		D9E2F34E2483B01E00747520 /* TilestesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2A24837BC40064C0ED /* TilestesViewModel.swift */; };
+		D9E2F34F2483B02500747520 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A2B24837BC50064C0ED /* MapViewModel.swift */; };
+		D9E4948F2483B4A1002C9BA1 /* TilesetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F33A2483A38700747520 /* TilesetViewModel.swift */; };
+		D9E494902483B4C8002C9BA1 /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2F33D2483A66C00747520 /* CellConfigurable.swift */; };
+		D9E494922483C1C7002C9BA1 /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3024837BF10064C0ED /* FlightInfo.swift */; };
+		D9E494932483C34B002C9BA1 /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3224837BF10064C0ED /* Flights.swift */; };
+		D9E494942483C364002C9BA1 /* Tileset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164A3124837BF10064C0ED /* Tileset.swift */; };
+		D9E494962483C9B2002C9BA1 /* FlightInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = D9E494952483C9B1002C9BA1 /* FlightInfo.json */; };
+		D9E8233C24838DC200274220 /* IntelinAirTaskNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E8233A24838DC200274220 /* IntelinAirTaskNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9E8233F24838DC200274220 /* IntelinAirTaskNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E8233824838DC200274220 /* IntelinAirTaskNetworking.framework */; };
+		D9E8234024838DC200274220 /* IntelinAirTaskNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9E8233824838DC200274220 /* IntelinAirTaskNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9164A5124837EE30064C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9164A0224837B0F0064C0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9164A4B24837EE30064C0ED;
+			remoteInfo = IntelinAirTaskExtensions;
+		};
+		D9164A6624837F5C0064C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9164A0224837B0F0064C0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9164A6024837F5C0064C0ED;
+			remoteInfo = IntelinAirTaskViewModel;
+		};
+		D9164A7924837FC50064C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9164A0224837B0F0064C0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9164A7324837FC50064C0ED;
+			remoteInfo = IntelinAirTaskModel;
+		};
+		D9876F5E2483867700EE3367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9164A0224837B0F0064C0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9876F582483867700EE3367;
+			remoteInfo = IntelinAirTaskBinding;
+		};
+		D9E2F3492483AF1100747520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9164A0224837B0F0064C0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9164A0924837B0F0064C0ED;
+			remoteInfo = IntelinAirTask;
+		};
+		D9E8233D24838DC200274220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9164A0224837B0F0064C0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E8233724838DC200274220;
+			remoteInfo = IntelinAirTaskNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9164A5824837EE30064C0ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9876F612483867700EE3367 /* IntelinAirTaskBinding.framework in Embed Frameworks */,
+				D9164A5424837EE30064C0ED /* IntelinAirTaskExtensions.framework in Embed Frameworks */,
+				D9164A6924837F5C0064C0ED /* IntelinAirTaskViewModel.framework in Embed Frameworks */,
+				D9E8234024838DC200274220 /* IntelinAirTaskNetworking.framework in Embed Frameworks */,
+				D9164A7C24837FC50064C0ED /* IntelinAirTaskModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D9164A0A24837B0F0064C0ED /* IntelinAirTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelinAirTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9164A0D24837B0F0064C0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9164A0F24837B0F0064C0ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D9164A1424837B0F0064C0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9164A1624837B100064C0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9164A1924837B100064C0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9164A1B24837B100064C0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9164A2324837BA00064C0ED /* TilesetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilesetCell.swift; sourceTree = "<group>"; };
+		D9164A2424837BA00064C0ED /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D9164A2524837BA00064C0ED /* TilesetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilesetsViewController.swift; sourceTree = "<group>"; };
+		D9164A2A24837BC40064C0ED /* TilestesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilestesViewModel.swift; sourceTree = "<group>"; };
+		D9164A2B24837BC50064C0ED /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		D9164A2F24837BF10064C0ED /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		D9164A3024837BF10064C0ED /* FlightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		D9164A3124837BF10064C0ED /* Tileset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tileset.swift; sourceTree = "<group>"; };
+		D9164A3224837BF10064C0ED /* Flights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		D9164A3924837C540064C0ED /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		D9164A3B24837CAB0064C0ED /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D9164A3E24837D210064C0ED /* IntelinAirTask+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntelinAirTask+UIImageView.swift"; sourceTree = "<group>"; };
+		D9164A4024837DC00064C0ED /* InteliAirTask+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InteliAirTask+URLSession.swift"; sourceTree = "<group>"; };
+		D9164A4224837DF10064C0ED /* IntelinAirTask+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntelinAirTask+Data.swift"; sourceTree = "<group>"; };
+		D9164A4424837E3D0064C0ED /* IntelinAirTaskStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelinAirTaskStrings.swift; sourceTree = "<group>"; };
+		D9164A4C24837EE30064C0ED /* IntelinAirTaskExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntelinAirTaskExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9164A4E24837EE30064C0ED /* IntelinAirTaskExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelinAirTaskExtensions.h; sourceTree = "<group>"; };
+		D9164A4F24837EE30064C0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9164A6124837F5C0064C0ED /* IntelinAirTaskViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntelinAirTaskViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9164A6324837F5C0064C0ED /* IntelinAirTaskViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelinAirTaskViewModel.h; sourceTree = "<group>"; };
+		D9164A6424837F5C0064C0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9164A7424837FC50064C0ED /* IntelinAirTaskModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntelinAirTaskModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9164A7624837FC50064C0ED /* IntelinAirTaskModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelinAirTaskModel.h; sourceTree = "<group>"; };
+		D9164A7724837FC50064C0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9876F592483867700EE3367 /* IntelinAirTaskBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntelinAirTaskBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9876F5B2483867700EE3367 /* IntelinAirTaskBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelinAirTaskBinding.h; sourceTree = "<group>"; };
+		D9876F5C2483867700EE3367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E2F33A2483A38700747520 /* TilesetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilesetViewModel.swift; sourceTree = "<group>"; };
+		D9E2F33D2483A66C00747520 /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
+		D9E2F3442483AF1100747520 /* IntelinAirTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelinAirTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E2F3462483AF1100747520 /* IntelinAirTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelinAirTaskTests.swift; sourceTree = "<group>"; };
+		D9E2F3482483AF1100747520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E494952483C9B1002C9BA1 /* FlightInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FlightInfo.json; sourceTree = "<group>"; };
+		D9E8233824838DC200274220 /* IntelinAirTaskNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntelinAirTaskNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E8233A24838DC200274220 /* IntelinAirTaskNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelinAirTaskNetworking.h; sourceTree = "<group>"; };
+		D9E8233B24838DC200274220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9164A0724837B0F0064C0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A5324837EE30064C0ED /* IntelinAirTaskExtensions.framework in Frameworks */,
+				D9164A6824837F5C0064C0ED /* IntelinAirTaskViewModel.framework in Frameworks */,
+				D9E8233F24838DC200274220 /* IntelinAirTaskNetworking.framework in Frameworks */,
+				D9876F602483867700EE3367 /* IntelinAirTaskBinding.framework in Frameworks */,
+				D9164A7B24837FC50064C0ED /* IntelinAirTaskModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A4924837EE30064C0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A5E24837F5C0064C0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A7124837FC50064C0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9876F562483867700EE3367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E2F3412483AF1100747520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E8233524838DC200274220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9164A0124837B0F0064C0ED = {
+			isa = PBXGroup;
+			children = (
+				D9164A0C24837B0F0064C0ED /* IntelinAirTask */,
+				D9E2F3452483AF1100747520 /* IntelinAirTaskTests */,
+				D9164A4D24837EE30064C0ED /* IntelinAirTaskExtensions */,
+				D9164A6224837F5C0064C0ED /* IntelinAirTaskViewModel */,
+				D9164A7524837FC50064C0ED /* IntelinAirTaskModel */,
+				D9876F5A2483867700EE3367 /* IntelinAirTaskBinding */,
+				D9E8233924838DC200274220 /* IntelinAirTaskNetworking */,
+				D9164A0B24837B0F0064C0ED /* Products */,
+				DDAF3DEDDA0B2D17FB232053 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D9164A0B24837B0F0064C0ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A0A24837B0F0064C0ED /* IntelinAirTask.app */,
+				D9164A4C24837EE30064C0ED /* IntelinAirTaskExtensions.framework */,
+				D9164A6124837F5C0064C0ED /* IntelinAirTaskViewModel.framework */,
+				D9164A7424837FC50064C0ED /* IntelinAirTaskModel.framework */,
+				D9876F592483867700EE3367 /* IntelinAirTaskBinding.framework */,
+				D9E8233824838DC200274220 /* IntelinAirTaskNetworking.framework */,
+				D9E2F3442483AF1100747520 /* IntelinAirTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9164A0C24837B0F0064C0ED /* IntelinAirTask */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A2224837B2B0064C0ED /* View */,
+				D9164A2924837BB40064C0ED /* ViewModel */,
+				D9164A2E24837BCD0064C0ED /* Model */,
+				D9164A3724837C020064C0ED /* Networking */,
+				D9164A3824837C100064C0ED /* Bind */,
+				D9164A3D24837CE70064C0ED /* Extensions */,
+				D9164A2124837B1E0064C0ED /* Support */,
+				D9164A4624837E790064C0ED /* Common */,
+				D9164A1824837B100064C0ED /* LaunchScreen.storyboard */,
+				D9164A1B24837B100064C0ED /* Info.plist */,
+			);
+			path = IntelinAirTask;
+			sourceTree = "<group>";
+		};
+		D9164A2124837B1E0064C0ED /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A0D24837B0F0064C0ED /* AppDelegate.swift */,
+				D9164A0F24837B0F0064C0ED /* SceneDelegate.swift */,
+				D9164A1624837B100064C0ED /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D9164A2224837B2B0064C0ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A1324837B0F0064C0ED /* Main.storyboard */,
+				D9164A2524837BA00064C0ED /* TilesetsViewController.swift */,
+				D9164A2424837BA00064C0ED /* MapViewController.swift */,
+				D9164A2324837BA00064C0ED /* TilesetCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9164A2924837BB40064C0ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A2B24837BC50064C0ED /* MapViewModel.swift */,
+				D9164A2A24837BC40064C0ED /* TilestesViewModel.swift */,
+				D9E2F33A2483A38700747520 /* TilesetViewModel.swift */,
+				D9E2F33D2483A66C00747520 /* CellConfigurable.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9164A2E24837BCD0064C0ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A3024837BF10064C0ED /* FlightInfo.swift */,
+				D9164A3224837BF10064C0ED /* Flights.swift */,
+				D9164A2F24837BF10064C0ED /* Geometry.swift */,
+				D9164A3124837BF10064C0ED /* Tileset.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9164A3724837C020064C0ED /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A3B24837CAB0064C0ED /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D9164A3824837C100064C0ED /* Bind */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A3924837C540064C0ED /* Container.swift */,
+			);
+			path = Bind;
+			sourceTree = "<group>";
+		};
+		D9164A3D24837CE70064C0ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A3E24837D210064C0ED /* IntelinAirTask+UIImageView.swift */,
+				D9164A4024837DC00064C0ED /* InteliAirTask+URLSession.swift */,
+				D9164A4224837DF10064C0ED /* IntelinAirTask+Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9164A4624837E790064C0ED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A4424837E3D0064C0ED /* IntelinAirTaskStrings.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D9164A4D24837EE30064C0ED /* IntelinAirTaskExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A4E24837EE30064C0ED /* IntelinAirTaskExtensions.h */,
+				D9164A4F24837EE30064C0ED /* Info.plist */,
+			);
+			path = IntelinAirTaskExtensions;
+			sourceTree = "<group>";
+		};
+		D9164A6224837F5C0064C0ED /* IntelinAirTaskViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A6324837F5C0064C0ED /* IntelinAirTaskViewModel.h */,
+				D9164A6424837F5C0064C0ED /* Info.plist */,
+			);
+			path = IntelinAirTaskViewModel;
+			sourceTree = "<group>";
+		};
+		D9164A7524837FC50064C0ED /* IntelinAirTaskModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9164A7624837FC50064C0ED /* IntelinAirTaskModel.h */,
+				D9164A7724837FC50064C0ED /* Info.plist */,
+			);
+			path = IntelinAirTaskModel;
+			sourceTree = "<group>";
+		};
+		D9876F5A2483867700EE3367 /* IntelinAirTaskBinding */ = {
+			isa = PBXGroup;
+			children = (
+				D9876F5B2483867700EE3367 /* IntelinAirTaskBinding.h */,
+				D9876F5C2483867700EE3367 /* Info.plist */,
+			);
+			path = IntelinAirTaskBinding;
+			sourceTree = "<group>";
+		};
+		D9E2F3452483AF1100747520 /* IntelinAirTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9E2F3462483AF1100747520 /* IntelinAirTaskTests.swift */,
+				D9E494952483C9B1002C9BA1 /* FlightInfo.json */,
+				D9E2F3482483AF1100747520 /* Info.plist */,
+			);
+			path = IntelinAirTaskTests;
+			sourceTree = "<group>";
+		};
+		D9E8233924838DC200274220 /* IntelinAirTaskNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				D9E8233A24838DC200274220 /* IntelinAirTaskNetworking.h */,
+				D9E8233B24838DC200274220 /* Info.plist */,
+			);
+			path = IntelinAirTaskNetworking;
+			sourceTree = "<group>";
+		};
+		DDAF3DEDDA0B2D17FB232053 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D9164A4724837EE30064C0ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A5024837EE30064C0ED /* IntelinAirTaskExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A5C24837F5C0064C0ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A6524837F5C0064C0ED /* IntelinAirTaskViewModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A6F24837FC50064C0ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A7824837FC50064C0ED /* IntelinAirTaskModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9876F542483867700EE3367 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9876F5D2483867700EE3367 /* IntelinAirTaskBinding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E8233324838DC200274220 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E8233C24838DC200274220 /* IntelinAirTaskNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D9164A0924837B0F0064C0ED /* IntelinAirTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9164A1E24837B100064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTask" */;
+			buildPhases = (
+				D9164A0624837B0F0064C0ED /* Sources */,
+				D9164A0724837B0F0064C0ED /* Frameworks */,
+				D9164A0824837B0F0064C0ED /* Resources */,
+				D9164A5824837EE30064C0ED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9164A5224837EE30064C0ED /* PBXTargetDependency */,
+				D9164A6724837F5C0064C0ED /* PBXTargetDependency */,
+				D9164A7A24837FC50064C0ED /* PBXTargetDependency */,
+				D9876F5F2483867700EE3367 /* PBXTargetDependency */,
+				D9E8233E24838DC200274220 /* PBXTargetDependency */,
+			);
+			name = IntelinAirTask;
+			productName = IntelinAirTask;
+			productReference = D9164A0A24837B0F0064C0ED /* IntelinAirTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9164A4B24837EE30064C0ED /* IntelinAirTaskExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9164A5524837EE30064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTaskExtensions" */;
+			buildPhases = (
+				D9164A4724837EE30064C0ED /* Headers */,
+				D9164A4824837EE30064C0ED /* Sources */,
+				D9164A4924837EE30064C0ED /* Frameworks */,
+				D9164A4A24837EE30064C0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelinAirTaskExtensions;
+			productName = IntelinAirTaskExtensions;
+			productReference = D9164A4C24837EE30064C0ED /* IntelinAirTaskExtensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9164A6024837F5C0064C0ED /* IntelinAirTaskViewModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9164A6A24837F5C0064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTaskViewModel" */;
+			buildPhases = (
+				D9164A5C24837F5C0064C0ED /* Headers */,
+				D9164A5D24837F5C0064C0ED /* Sources */,
+				D9164A5E24837F5C0064C0ED /* Frameworks */,
+				D9164A5F24837F5C0064C0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelinAirTaskViewModel;
+			productName = IntelinAirTaskViewModel;
+			productReference = D9164A6124837F5C0064C0ED /* IntelinAirTaskViewModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9164A7324837FC50064C0ED /* IntelinAirTaskModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9164A7D24837FC50064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTaskModel" */;
+			buildPhases = (
+				D9164A6F24837FC50064C0ED /* Headers */,
+				D9164A7024837FC50064C0ED /* Sources */,
+				D9164A7124837FC50064C0ED /* Frameworks */,
+				D9164A7224837FC50064C0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelinAirTaskModel;
+			productName = IntelinAirTaskModel;
+			productReference = D9164A7424837FC50064C0ED /* IntelinAirTaskModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9876F582483867700EE3367 /* IntelinAirTaskBinding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9876F622483867700EE3367 /* Build configuration list for PBXNativeTarget "IntelinAirTaskBinding" */;
+			buildPhases = (
+				D9876F542483867700EE3367 /* Headers */,
+				D9876F552483867700EE3367 /* Sources */,
+				D9876F562483867700EE3367 /* Frameworks */,
+				D9876F572483867700EE3367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelinAirTaskBinding;
+			productName = IntelinAirTaskBinding;
+			productReference = D9876F592483867700EE3367 /* IntelinAirTaskBinding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9E2F3432483AF1100747520 /* IntelinAirTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E2F34B2483AF1100747520 /* Build configuration list for PBXNativeTarget "IntelinAirTaskTests" */;
+			buildPhases = (
+				D9E2F3402483AF1100747520 /* Sources */,
+				D9E2F3412483AF1100747520 /* Frameworks */,
+				D9E2F3422483AF1100747520 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9E2F34A2483AF1100747520 /* PBXTargetDependency */,
+			);
+			name = IntelinAirTaskTests;
+			productName = IntelinAirTaskTests;
+			productReference = D9E2F3442483AF1100747520 /* IntelinAirTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9E8233724838DC200274220 /* IntelinAirTaskNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E8234124838DC200274220 /* Build configuration list for PBXNativeTarget "IntelinAirTaskNetworking" */;
+			buildPhases = (
+				D9E8233324838DC200274220 /* Headers */,
+				D9E8233424838DC200274220 /* Sources */,
+				D9E8233524838DC200274220 /* Frameworks */,
+				D9E8233624838DC200274220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelinAirTaskNetworking;
+			productName = IntelinAirTaskNetworking;
+			productReference = D9E8233824838DC200274220 /* IntelinAirTaskNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9164A0224837B0F0064C0ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Vahan Grigoryan";
+				TargetAttributes = {
+					D9164A0924837B0F0064C0ED = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9164A4B24837EE30064C0ED = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9164A6024837F5C0064C0ED = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9164A7324837FC50064C0ED = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9876F582483867700EE3367 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9E2F3432483AF1100747520 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = D9164A0924837B0F0064C0ED;
+					};
+					D9E8233724838DC200274220 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D9164A0524837B0F0064C0ED /* Build configuration list for PBXProject "IntelinAirTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9164A0124837B0F0064C0ED;
+			productRefGroup = D9164A0B24837B0F0064C0ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9164A0924837B0F0064C0ED /* IntelinAirTask */,
+				D9164A4B24837EE30064C0ED /* IntelinAirTaskExtensions */,
+				D9164A6024837F5C0064C0ED /* IntelinAirTaskViewModel */,
+				D9164A7324837FC50064C0ED /* IntelinAirTaskModel */,
+				D9876F582483867700EE3367 /* IntelinAirTaskBinding */,
+				D9E8233724838DC200274220 /* IntelinAirTaskNetworking */,
+				D9E2F3432483AF1100747520 /* IntelinAirTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9164A0824837B0F0064C0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A1A24837B100064C0ED /* LaunchScreen.storyboard in Resources */,
+				D9164A1724837B100064C0ED /* Assets.xcassets in Resources */,
+				D9164A1524837B0F0064C0ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A4A24837EE30064C0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A5F24837F5C0064C0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A7224837FC50064C0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9876F572483867700EE3367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E2F3422483AF1100747520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E494962483C9B2002C9BA1 /* FlightInfo.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E8233624838DC200274220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9164A0624837B0F0064C0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A3524837BF10064C0ED /* Tileset.swift in Sources */,
+				D9164A0E24837B0F0064C0ED /* AppDelegate.swift in Sources */,
+				D9164A2C24837BC50064C0ED /* TilestesViewModel.swift in Sources */,
+				D9E2F33B2483A38700747520 /* TilesetViewModel.swift in Sources */,
+				D9E2F33E2483A66C00747520 /* CellConfigurable.swift in Sources */,
+				D9164A4524837E3D0064C0ED /* IntelinAirTaskStrings.swift in Sources */,
+				D9164A2624837BA00064C0ED /* TilesetCell.swift in Sources */,
+				D9164A3624837BF10064C0ED /* Flights.swift in Sources */,
+				D9164A2724837BA00064C0ED /* MapViewController.swift in Sources */,
+				D9164A3424837BF10064C0ED /* FlightInfo.swift in Sources */,
+				D9164A3F24837D210064C0ED /* IntelinAirTask+UIImageView.swift in Sources */,
+				D9164A1024837B0F0064C0ED /* SceneDelegate.swift in Sources */,
+				D9164A2824837BA00064C0ED /* TilesetsViewController.swift in Sources */,
+				D9164A3A24837C540064C0ED /* Container.swift in Sources */,
+				D9164A4324837DF10064C0ED /* IntelinAirTask+Data.swift in Sources */,
+				D9164A3324837BF10064C0ED /* Geometry.swift in Sources */,
+				D9164A2D24837BC50064C0ED /* MapViewModel.swift in Sources */,
+				D9164A3C24837CAB0064C0ED /* APIClient.swift in Sources */,
+				D9164A4124837DC00064C0ED /* InteliAirTask+URLSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A4824837EE30064C0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A5924837F1F0064C0ED /* IntelinAirTask+UIImageView.swift in Sources */,
+				D9164A5A24837F210064C0ED /* InteliAirTask+URLSession.swift in Sources */,
+				D9164A5B24837F240064C0ED /* IntelinAirTask+Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A5D24837F5C0064C0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E2F33C2483A38700747520 /* TilesetViewModel.swift in Sources */,
+				D9164A6D24837F670064C0ED /* MapViewModel.swift in Sources */,
+				D9E2F33F2483A66C00747520 /* CellConfigurable.swift in Sources */,
+				D9164A6E24837F690064C0ED /* TilestesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9164A7024837FC50064C0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9164A8024837FE60064C0ED /* FlightInfo.swift in Sources */,
+				D9164A8124837FE80064C0ED /* Flights.swift in Sources */,
+				D9164A8224837FEA0064C0ED /* Geometry.swift in Sources */,
+				D9164A8324837FED0064C0ED /* Tileset.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9876F552483867700EE3367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9876F652483868C00EE3367 /* Container.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E2F3402483AF1100747520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E494902483B4C8002C9BA1 /* CellConfigurable.swift in Sources */,
+				D9E494932483C34B002C9BA1 /* Flights.swift in Sources */,
+				D9E2F3472483AF1100747520 /* IntelinAirTaskTests.swift in Sources */,
+				D9E2F34E2483B01E00747520 /* TilestesViewModel.swift in Sources */,
+				D9E2F34F2483B02500747520 /* MapViewModel.swift in Sources */,
+				D9DED0E124842A5200EF0775 /* APIClient.swift in Sources */,
+				D9E4948F2483B4A1002C9BA1 /* TilesetViewModel.swift in Sources */,
+				D9E494942483C364002C9BA1 /* Tileset.swift in Sources */,
+				D9DED0E02484276B00EF0775 /* InteliAirTask+URLSession.swift in Sources */,
+				D9E494922483C1C7002C9BA1 /* FlightInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E8233424838DC200274220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D925194524838EA2008BF4F0 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9164A5224837EE30064C0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9164A4B24837EE30064C0ED /* IntelinAirTaskExtensions */;
+			targetProxy = D9164A5124837EE30064C0ED /* PBXContainerItemProxy */;
+		};
+		D9164A6724837F5C0064C0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9164A6024837F5C0064C0ED /* IntelinAirTaskViewModel */;
+			targetProxy = D9164A6624837F5C0064C0ED /* PBXContainerItemProxy */;
+		};
+		D9164A7A24837FC50064C0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9164A7324837FC50064C0ED /* IntelinAirTaskModel */;
+			targetProxy = D9164A7924837FC50064C0ED /* PBXContainerItemProxy */;
+		};
+		D9876F5F2483867700EE3367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9876F582483867700EE3367 /* IntelinAirTaskBinding */;
+			targetProxy = D9876F5E2483867700EE3367 /* PBXContainerItemProxy */;
+		};
+		D9E2F34A2483AF1100747520 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9164A0924837B0F0064C0ED /* IntelinAirTask */;
+			targetProxy = D9E2F3492483AF1100747520 /* PBXContainerItemProxy */;
+		};
+		D9E8233E24838DC200274220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9E8233724838DC200274220 /* IntelinAirTaskNetworking */;
+			targetProxy = D9E8233D24838DC200274220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9164A1324837B0F0064C0ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9164A1424837B0F0064C0ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9164A1824837B100064C0ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9164A1924837B100064C0ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9164A1C24837B100064C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9164A1D24837B100064C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9164A1F24837B100064C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				INFOPLIST_FILE = IntelinAirTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9164A2024837B100064C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				INFOPLIST_FILE = IntelinAirTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9164A5624837EE30064C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskExtensions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9164A5724837EE30064C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskExtensions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9164A6B24837F5C0064C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskViewModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9164A6C24837F5C0064C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskViewModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9164A7E24837FC50064C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9164A7F24837FC50064C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9876F632483867700EE3367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskBinding/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskBinding;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9876F642483867700EE3367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskBinding/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskBinding;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9E2F34C2483AF1100747520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				INFOPLIST_FILE = IntelinAirTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelinAirTask.app/IntelinAirTask";
+			};
+			name = Debug;
+		};
+		D9E2F34D2483AF1100747520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				INFOPLIST_FILE = IntelinAirTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelinAirTask.app/IntelinAirTask";
+			};
+			name = Release;
+		};
+		D9E8234224838DC200274220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9E8234324838DC200274220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBY5GUBKXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntelinAirTaskNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vahgrig.IntelinAirTaskNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9164A0524837B0F0064C0ED /* Build configuration list for PBXProject "IntelinAirTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9164A1C24837B100064C0ED /* Debug */,
+				D9164A1D24837B100064C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9164A1E24837B100064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9164A1F24837B100064C0ED /* Debug */,
+				D9164A2024837B100064C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9164A5524837EE30064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTaskExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9164A5624837EE30064C0ED /* Debug */,
+				D9164A5724837EE30064C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9164A6A24837F5C0064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTaskViewModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9164A6B24837F5C0064C0ED /* Debug */,
+				D9164A6C24837F5C0064C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9164A7D24837FC50064C0ED /* Build configuration list for PBXNativeTarget "IntelinAirTaskModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9164A7E24837FC50064C0ED /* Debug */,
+				D9164A7F24837FC50064C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9876F622483867700EE3367 /* Build configuration list for PBXNativeTarget "IntelinAirTaskBinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9876F632483867700EE3367 /* Debug */,
+				D9876F642483867700EE3367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9E2F34B2483AF1100747520 /* Build configuration list for PBXNativeTarget "IntelinAirTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E2F34C2483AF1100747520 /* Debug */,
+				D9E2F34D2483AF1100747520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9E8234124838DC200274220 /* Build configuration list for PBXNativeTarget "IntelinAirTaskNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E8234224838DC200274220 /* Debug */,
+				D9E8234324838DC200274220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9164A0224837B0F0064C0ED /* Project object */;
+}
